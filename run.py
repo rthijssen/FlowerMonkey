@@ -14,9 +14,6 @@ def confirm():
         if input == "n": return False
         elif input == "y": return True 
 
-def printBanner():
-    print "SVN-Harmony"
-
 try:
     print file('banner', 'r').read()
 
@@ -53,7 +50,7 @@ try:
                 print "[?] An unexpected response was recieved. The recieved response code was '%u'" % response_code
            
             #Defautl regex of stuff we want to download
-            regex = r"(.sql$|.txt$)"
+            regex = r"(.sql|.txt|.pdf|.doc|.xls)$"
  
             # Awesome .svn exists, lets see who want to come out and play
             import svn_version_x

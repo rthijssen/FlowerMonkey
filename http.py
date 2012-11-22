@@ -1,6 +1,11 @@
 #!/usr/bin/python
 
 # START - this code is needed to prevent DNS leaks
+
+"""
+Full Tor support thanks to talesofacoldadmin.com
+http://talesofacoldadmin.com/2012/11/13/proxying-dns-with-python.html)
+"""
 import socks
 import socket
 
@@ -15,7 +20,7 @@ socket.getaddrinfo = getaddrinfo
 import urllib2
 
 tor = False
-user_agent = "Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0.1) Gecko/20121011 Firefox/16.0.1"
+user_agent = "Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0.1) Gecko/20121011 Firefox/16.0.0"
 
 # Set our current proxy
 def setProxy(type=socks.PROXY_TYPE_SOCKS5, host="127.0.0.1", port="9050"):
