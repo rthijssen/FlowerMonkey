@@ -20,7 +20,7 @@ def test(page):
     #        print "[!] Exception: %s" % e 
     #        time.sleep(5) 
     #    quit()
-    return True 
+    return True #Not implemented yet
 
 def download(base_url, regex=None, archive=False):
 
