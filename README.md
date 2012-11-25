@@ -3,7 +3,7 @@ Developer: Ruben Thijssen (@rubenthijssen) http://www.damnsecure.org
 Copyright (c) 2012 DamnSecure
 
 Project FlowerMonkey is a (simple) tool that allows you to discover and/or extract data from a directory that contains a .svn directory.
-See http://www.damnsecure.org/<blog-post> for more details
+See http://www.damnsecure.org/to-svn-and-the-beyond/ for more details
 
 USAGE:
 To run this tool you only need to provide a url (example: http://www.damnsecure.org). The tool will then visit the .svn directory of the provided url. In the case of the example url this would be 'http://www.damnsecure.org/.svn'. From there on the wcprops-all file will be downloaded and all the paths will be extracted. Then based on the regex defined in 'run.py' the files matching the regex will be downloaded. If needed change the regex (or the rest of the script) to your needs.
